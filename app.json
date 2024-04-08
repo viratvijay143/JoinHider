@@ -1,16 +1,47 @@
 {
-  "name": "Join-Hider",
-  "logo": "https://telegra.ph/file/618a1a11f70ec0a3d137d.jpg",
-  "description": "A join hider bot.",
+
+    "name": "Unkniwntxt",
+
+    "description": "Download videos from various websites using this telegram bot",
+
+    "repository": "https://github.com/Martyy2003/Unkniwntxt",
+    "buildpacks":[
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        },
+        {
+            "url": "https://github.com/amivin/aria2-heroku.git"
+        },
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "keywords": [
+
+       
+
+        "telegram bot",
+
+        "pyrogram"
+
+    ],
   "env": {
     "BOT_TOKEN": {
       "description": "Enter bot token.",
       "value": ""
     }
   },
-   "buildpacks": [
+  "buildpacks": [
+
         {
+
             "url": "heroku/python"
-        }
+
+        },
+       {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+       }
+       
     ]
+
 }
